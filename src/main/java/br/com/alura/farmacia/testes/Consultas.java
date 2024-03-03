@@ -18,7 +18,7 @@ public class Consultas {
         em.getTransaction().begin();
 
         // Testando o método que busca todos os produtos
-        /*List<Produto> todos = produtoDao.buscarTodos();
+        List<Produto> todos = produtoDao.buscarTodos();
         todos.forEach(p -> System.out.println("Consulta pelo método buscar todos: " + p.getNome()));
 
         // Testando busca por id
@@ -38,7 +38,7 @@ public class Consultas {
 
         // Testando método que busca produto por nome do Fabricante
         List<Produto> todos2 = produtoDao.buscarPorNomeDoFabricante("Bayer");
-        todos2.forEach(p3 -> System.out.println("Consulta pelo nome do Fabricante: " + p3.getNome()));*/
+        todos2.forEach(p3 -> System.out.println("Consulta pelo nome do Fabricante: " + p3.getNome()));
 
         // Testando método que remove produto por ID
         Produto produtoParaRemover = produtoDao.buscarPorId(1); // Supondo que você queira remover o produto com ID 1
